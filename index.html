@@ -221,6 +221,143 @@
                 </div>
             </div>
         </section>
+        <title>Achievements Timeline</title>
+<style>
+    body {
+        background: #000;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px 0;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        background: #ffd700;
+        transform: translateX(-50%);
+    }
+
+    .container {
+        padding: 20px 40px;
+        position: relative;
+        width: 50%;
+    }
+
+    .container.left {
+        left: 0;
+    }
+
+    .container.right {
+        left: 50%;
+    }
+
+    .content {
+        background: #111;
+        padding: 15px 20px;
+        border-radius: 10px;
+        border: 1px solid #ffd700;
+        transition: 0.3s;
+    }
+
+    .content:hover {
+        transform: scale(1.05);
+        background: #1a1a1a;
+    }
+
+    .container::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 15px;
+        height: 15px;
+        background: #ffd700;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .left::before {
+        right: -8px;
+    }
+
+    .right::before {
+        left: -8px;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #ffd700;
+    }
+
+    p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+        .timeline::before {
+            left: 10px;
+        }
+
+        .container {
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+
+        .container.right {
+            left: 0;
+        }
+
+        .container::before {
+            left: 2px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="timeline">
+
+    <div class="container left">
+        <div class="content">
+            <h3>Terrasense</h3>
+            <p>Exhibition 1st Prize</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Official School Logo</h3>
+            <p>Selected Designer</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>School Documentary</h3>
+            <p>Director</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Creative Works</h3>
+            <p>Multiple design & video production projects</p>
+        </div>
+    </div>
+
+</div>
 
         <!-- CONTACT SECTION -->
         <section id="contact" class="contact-section">
